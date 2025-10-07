@@ -16,31 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peT-Hz-S60">
-                                <rect key="frame" x="20" y="192" width="353" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthdayWallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ojz-jU-opI">
+                                <rect key="frame" x="0.0" y="-28" width="393" height="920"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarta.png" translatesAutoresizingMaskIntoConstraints="NO" id="peT-Hz-S60">
+                                <rect key="frame" x="20" y="172" width="353" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="H1p-iX-v5s"/>
+                                    <constraint firstAttribute="height" constant="300" id="H1p-iX-v5s"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-rg-FJH">
-                                <rect key="frame" x="20" y="415" width="353" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelBirthday" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-rg-FJH">
+                                <rect key="frame" x="50" y="491.99999999999994" width="293" height="44.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelWish" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ8-Zy-I40">
+                                <rect key="frame" x="50" y="556.33333333333337" width="293" height="25"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93339353799819946" green="0.69579094648361206" blue="0.83968615531921387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ftO-rg-FJH" secondAttribute="trailing" constant="20" id="B4J-45-rMy"/>
-                            <constraint firstItem="peT-Hz-S60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wxv-gR-2XO"/>
-                            <constraint firstItem="ftO-rg-FJH" firstAttribute="top" secondItem="peT-Hz-S60" secondAttribute="bottom" constant="95" id="Zjv-Na-aUp"/>
-                            <constraint firstItem="ftO-rg-FJH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZ9-i4-3cn"/>
+                            <constraint firstItem="SJ8-Zy-I40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0aD-ei-FGC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ojz-jU-opI" secondAttribute="trailing" id="2Bd-Jd-IGy"/>
+                            <constraint firstItem="Ojz-jU-opI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4VM-8X-MGE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ftO-rg-FJH" secondAttribute="trailing" constant="50" id="B4J-45-rMy"/>
+                            <constraint firstItem="ftO-rg-FJH" firstAttribute="top" secondItem="Ojz-jU-opI" secondAttribute="bottom" constant="-400" id="WLc-8T-ib6"/>
+                            <constraint firstItem="Ojz-jU-opI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-200" id="Wme-0Q-Zbf"/>
+                            <constraint firstItem="peT-Hz-S60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wxv-gR-2XO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SJ8-Zy-I40" secondAttribute="trailing" constant="50" id="YJF-EJ-0MT"/>
+                            <constraint firstItem="ftO-rg-FJH" firstAttribute="top" secondItem="peT-Hz-S60" secondAttribute="bottom" constant="20" id="Zjv-Na-aUp"/>
+                            <constraint firstItem="ftO-rg-FJH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="aZ9-i4-3cn"/>
+                            <constraint firstItem="SJ8-Zy-I40" firstAttribute="top" secondItem="ftO-rg-FJH" secondAttribute="bottom" constant="20" id="gcf-CE-y8I"/>
                             <constraint firstItem="peT-Hz-S60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kew-yz-6u2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peT-Hz-S60" secondAttribute="trailing" constant="20" id="xhB-b9-t4s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LMf-gV-WHc"/>
+                    <connections>
+                        <outlet property="labelBirthday" destination="ftO-rg-FJH" id="H2i-75-v3c"/>
+                        <outlet property="labelWish" destination="SJ8-Zy-I40" id="hWC-rt-ssl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,11 +88,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="birthdayWallpaper.jpg" width="413" height="620"/>
+        <image name="tarta.png" width="2500" height="2500"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
