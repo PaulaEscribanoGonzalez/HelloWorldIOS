@@ -16,15 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-pI-4y4">
-                                <rect key="frame" x="20" y="10" width="353" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-UB-QXp">
-                                <rect key="frame" x="59" y="282" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peT-Hz-S60">
+                                <rect key="frame" x="20" y="192" width="353" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="H1p-iX-v5s"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-rg-FJH">
+                                <rect key="frame" x="20" y="415" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,9 +32,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="8G9-pI-4y4" secondAttribute="trailing" constant="20" id="45i-Oz-Jez"/>
-                            <constraint firstItem="8G9-pI-4y4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="RfP-r8-Jjl"/>
-                            <constraint firstItem="8G9-pI-4y4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Xtr-mk-pS3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ftO-rg-FJH" secondAttribute="trailing" constant="20" id="B4J-45-rMy"/>
+                            <constraint firstItem="peT-Hz-S60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wxv-gR-2XO"/>
+                            <constraint firstItem="ftO-rg-FJH" firstAttribute="top" secondItem="peT-Hz-S60" secondAttribute="bottom" constant="95" id="Zjv-Na-aUp"/>
+                            <constraint firstItem="ftO-rg-FJH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZ9-i4-3cn"/>
+                            <constraint firstItem="peT-Hz-S60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kew-yz-6u2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peT-Hz-S60" secondAttribute="trailing" constant="20" id="xhB-b9-t4s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LMf-gV-WHc"/>
