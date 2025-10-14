@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2724.4274809160306" y="-560.56338028169012"/>
+            <point key="canvasLocation" x="2769" y="-675"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wiQ-nX-gwp">
@@ -93,22 +93,35 @@
                                     <action selector="helloWorldClicked:" destination="Tmq-uC-ClZ" eventType="touchUpInside" id="zuS-d7-TXd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMm-bO-0AO">
+                                <rect key="frame" x="20" y="672" width="353" height="35"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Shop List"/>
+                                <connections>
+                                    <action selector="ListClicked:" destination="Tmq-uC-ClZ" eventType="touchUpInside" id="UOW-mu-Tg9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="djk-9I-89F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8Rl-qE-Ii3" firstAttribute="leading" secondItem="djk-9I-89F" secondAttribute="leading" constant="10" id="3u5-3U-FV8"/>
+                            <constraint firstItem="djk-9I-89F" firstAttribute="trailing" secondItem="EMm-bO-0AO" secondAttribute="trailing" constant="20" id="7ET-eY-vf8"/>
                             <constraint firstItem="djk-9I-89F" firstAttribute="trailing" secondItem="DD4-Nt-ZSr" secondAttribute="trailing" constant="20" id="BUb-Nt-eV7"/>
                             <constraint firstItem="DD4-Nt-ZSr" firstAttribute="leading" secondItem="djk-9I-89F" secondAttribute="leading" constant="20" id="EMg-Tq-tHP"/>
                             <constraint firstItem="8Rl-qE-Ii3" firstAttribute="top" secondItem="djk-9I-89F" secondAttribute="top" constant="50" id="Ecu-lx-WG3"/>
+                            <constraint firstItem="EMm-bO-0AO" firstAttribute="top" secondItem="DD4-Nt-ZSr" secondAttribute="bottom" constant="124" id="azm-V7-LAJ"/>
                             <constraint firstItem="djk-9I-89F" firstAttribute="trailing" secondItem="8Rl-qE-Ii3" secondAttribute="trailing" constant="10" id="bPZ-yD-Mz6"/>
                             <constraint firstItem="DD4-Nt-ZSr" firstAttribute="top" secondItem="8Rl-qE-Ii3" secondAttribute="bottom" constant="256" id="cMP-ae-pvb"/>
+                            <constraint firstItem="EMm-bO-0AO" firstAttribute="leading" secondItem="djk-9I-89F" secondAttribute="leading" constant="20" id="haO-XS-oeN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1I8-QL-507"/>
                     <connections>
                         <segue destination="32K-oB-ryU" kind="show" identifier="ShowWorldSegue" id="W7N-SG-UWH"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowBirthdaySegue" id="IH2-ND-3pi"/>
+                        <segue destination="dlF-5m-1nl" kind="show" identifier="ShowListSegue" id="4HD-Wr-WF9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4BI-MM-fOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,12 +175,12 @@
                     <connections>
                         <outlet property="labelHello" destination="Hxg-Vb-2S0" id="6i9-YD-KVo"/>
                         <outlet property="username" destination="3gV-Ey-EuM" id="5hr-dd-f9f"/>
-                        <segue destination="g7W-7g-7iE" kind="show" identifier="showWelcomeSegue" id="m2k-wJ-N98"/>
+                        <segue destination="g7W-7g-7iE" kind="show" identifier="ShowWelcomeSegue" id="m2k-wJ-N98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yB-LM-gNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.7022900763359" y="235.91549295774649"/>
+            <point key="canvasLocation" x="2769" y="3"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="l9i-jl-i0d">
@@ -208,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kd5-dS-5rN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3607" y="236"/>
+            <point key="canvasLocation" x="3628" y="3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Edn-XE-gsq">
@@ -237,7 +250,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-1R-bBH">
-                                <rect key="frame" x="0.0" y="118" width="393" height="128"/>
+                                <rect key="frame" x="0.0" y="172" width="393" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Xri-Ja-2Oz"/>
@@ -253,7 +266,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="vCf-PM-bMS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="vCf-PM-bMS">
                                 <rect key="frame" x="0.0" y="274" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vCf-PM-bMS" id="Hcr-hZ-R3z">
@@ -270,13 +283,15 @@
                             <constraint firstItem="Kwf-1R-bBH" firstAttribute="leading" secondItem="nb1-EO-EK3" secondAttribute="leading" id="s0t-aK-6QY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gOY-Oy-Ims"/>
                     <connections>
                         <outlet property="table" destination="Kwf-1R-bBH" id="y1m-Hu-tXa"/>
+                        <outlet property="tableView" destination="Kwf-1R-bBH" id="EPi-PI-JOM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTI-1t-GMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="-451"/>
+            <point key="canvasLocation" x="2769" y="789"/>
         </scene>
     </scenes>
     <resources>

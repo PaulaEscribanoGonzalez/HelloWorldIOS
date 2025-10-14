@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     let BirthdaySegue = "ShowBirthdaySegue"
     let WorldSegue = "ShowWorldSegue"
+    let ListSegue = "ShowListSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
     }
     @IBAction func helloWorldClicked(_ sender: UIButton) {
         self.performSegue(withIdentifier: WorldSegue, sender: self)
+    }
+    
+    @IBAction func ListClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: ListSegue, sender: self)
     }
     
     
