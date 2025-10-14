@@ -35,7 +35,14 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         
-        guard let cell = UItableView, tableView(<#T##UITableView#>, didSelectRowAt: <#T##IndexPath#>)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as?
+                ShopItemViewCell else {
+                return UITableViewCell()
+        }
+        
+        let item = self.shopItems[indexPath.row]
+        cell.shopItemLabel.text = item
+        
         return cell
     }
     

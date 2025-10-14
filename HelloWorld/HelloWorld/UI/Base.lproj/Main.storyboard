@@ -293,6 +293,21 @@
             </objects>
             <point key="canvasLocation" x="2769" y="789"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Bgd-G6-qr4">
+            <objects>
+                <viewController id="cUg-Ce-Mio" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E0V-Ad-hKu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8aH-6f-pJP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZA-XT-0KJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3682" y="789"/>
+        </scene>
     </scenes>
     <resources>
         <image name="birthdayWallpaper.jpg" width="413" height="620"/>
