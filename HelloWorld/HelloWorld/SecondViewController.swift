@@ -9,9 +9,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    @IBOutlet weak var labelHello: UILabel!
     
-    var username : String? = nil
+    let WelcomeSegue = "ShowWelcomeSegue"
+    @IBOutlet weak var labelHello: UILabel!
+    @IBOutlet weak var username: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +21,24 @@ class SecondViewController: UIViewController {
         labelHello.text = "Hello, type your name below"
         
         self.title = "Second View"
-        
-        print("\(username ?? "No username")")
     }
     
-
+    
+    @IBAction func doneClicked(_ sender: UIButton) {
+        
+        if username.text!.isEmpty
+        {
+            let alert = UIAlertController(title: "Introduce tu nombre", message: "Introduce tu nombre, por favor", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        else{
+            self.performSegue(withIdentifier: WelcomeSegue, sender: self)
+        }
+        
+        
+    }
     /*
     // MARK: - Navigation
 

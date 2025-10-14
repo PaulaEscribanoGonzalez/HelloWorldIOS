@@ -12,17 +12,11 @@ class ViewController: UIViewController {
     let BirthdaySegue = "ShowBirthdaySegue"
     let WorldSegue = "ShowWorldSegue"
     
-    @IBOutlet weak var labelBirthday: UILabel!
-    @IBOutlet weak var labelWish: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.title = "Hello World"
-        
-        labelBirthday.text = "Happy Birthday Paula!"
-        labelWish.text = "I wish you the best"
         
         
     }
@@ -38,7 +32,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == WorldSegue {
             let destinationVC = segue.destination as! SecondViewController
-            destinationVC.username = "Paula"
+            
         }
     }
 
