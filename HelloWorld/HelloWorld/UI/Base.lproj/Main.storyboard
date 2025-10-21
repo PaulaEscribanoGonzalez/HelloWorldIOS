@@ -244,7 +244,7 @@
         <!--Table View Controller-->
         <scene sceneID="txb-Gz-OmS">
             <objects>
-                <viewController id="dlF-5m-1nl" customClass="TableViewController" sceneMemberID="viewController">
+                <viewController id="dlF-5m-1nl" customClass="TableViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qcX-IL-mDB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,6 +265,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qcX-IL-mDB" id="Deg-PR-KHE"/>
+                                    <outlet property="delegate" destination="qcX-IL-mDB" id="lhc-uy-y5R"/>
+                                </connections>
                             </tableView>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="vCf-PM-bMS">
                                 <rect key="frame" x="0.0" y="274" width="393" height="44"/>
@@ -285,18 +289,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="gOY-Oy-Ims"/>
                     <connections>
-                        <outlet property="table" destination="Kwf-1R-bBH" id="y1m-Hu-tXa"/>
-                        <outlet property="tableView" destination="Kwf-1R-bBH" id="EPi-PI-JOM"/>
+                        <outlet property="tableView" destination="Kwf-1R-bBH" id="sJ9-0R-Xrr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTI-1t-GMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2769" y="789"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop Item View Controller-->
         <scene sceneID="Bgd-G6-qr4">
             <objects>
-                <viewController id="cUg-Ce-Mio" sceneMemberID="viewController">
+                <viewController id="cUg-Ce-Mio" customClass="ShopItemViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E0V-Ad-hKu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
